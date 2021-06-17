@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="vhp-as-MAN" customClass="PhotoTableViewCell" customModule="MVVM_Final" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhp-as-MAN" id="iI7-pw-GRp">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NOH-Rq-9Yi">
+                        <rect key="frame" x="16" y="4.5" width="40" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4Kv-mD-ReG"/>
+                            <constraint firstAttribute="height" constant="40" id="9ks-eT-1uR"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHW-Cl-sdd">
+                        <rect key="frame" x="64" y="4" width="330" height="198"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueT-Sc-JAs">
+                                <rect key="frame" x="4" y="4" width="322" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ek-43-IVU">
+                                <rect key="frame" x="4" y="44" width="322" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="nVG-w4-KG2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Ek-43-IVU" secondAttribute="trailing" constant="4" id="1Yp-JW-hfb"/>
+                            <constraint firstItem="2Ek-43-IVU" firstAttribute="leading" secondItem="EHW-Cl-sdd" secondAttribute="leading" constant="4" id="AQv-cB-6uz"/>
+                            <constraint firstAttribute="bottom" secondItem="2Ek-43-IVU" secondAttribute="bottom" constant="4" id="L5c-ex-Xpo"/>
+                            <constraint firstItem="ueT-Sc-JAs" firstAttribute="leading" secondItem="EHW-Cl-sdd" secondAttribute="leading" constant="4" id="dMe-f0-LVa"/>
+                            <constraint firstItem="ueT-Sc-JAs" firstAttribute="top" secondItem="EHW-Cl-sdd" secondAttribute="top" constant="4" id="eaQ-W3-Bn3"/>
+                            <constraint firstItem="2Ek-43-IVU" firstAttribute="top" secondItem="ueT-Sc-JAs" secondAttribute="bottom" constant="4" id="jw3-J3-Kh7"/>
+                            <constraint firstAttribute="trailing" secondItem="ueT-Sc-JAs" secondAttribute="trailing" constant="4" id="mXD-T1-UV4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NOH-Rq-9Yi" firstAttribute="top" secondItem="iI7-pw-GRp" secondAttribute="top" constant="4" id="CMX-mM-21P"/>
+                    <constraint firstItem="NOH-Rq-9Yi" firstAttribute="leading" secondItem="iI7-pw-GRp" secondAttribute="leading" constant="16" id="RPx-UZ-9zW"/>
+                    <constraint firstAttribute="trailing" secondItem="EHW-Cl-sdd" secondAttribute="trailing" constant="15" id="a3n-sY-M4F"/>
+                    <constraint firstItem="EHW-Cl-sdd" firstAttribute="leading" secondItem="NOH-Rq-9Yi" secondAttribute="trailing" constant="8" id="cWw-Sv-JNH"/>
+                    <constraint firstAttribute="bottom" secondItem="EHW-Cl-sdd" secondAttribute="bottom" constant="12" id="n2U-ab-LJp"/>
+                    <constraint firstItem="EHW-Cl-sdd" firstAttribute="top" secondItem="iI7-pw-GRp" secondAttribute="top" constant="4" id="pPi-Hn-teu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="vpt-z5-yGL"/>
+            <connections>
+                <outlet property="containerView" destination="EHW-Cl-sdd" id="3bo-kq-1v2"/>
+                <outlet property="photoView" destination="2Ek-43-IVU" id="Pgw-2s-ru7"/>
+                <outlet property="senderLabel" destination="ueT-Sc-JAs" id="jf2-bZ-Plk"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paperplane.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
